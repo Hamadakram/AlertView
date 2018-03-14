@@ -8,7 +8,7 @@ Grab via Gradle: (Uploading. Will be uploaded in few hours)
 implementation 'com.irozon.alertview:alertview:1.0.0'
 ```
 ## Usage
-#### Kotlin
+### Kotlin
 ```java
 val alert = AlertView("Title", "Message", AlertStyle.BOTTOM_SHEET)
 alert.addAction(AlertAction("Action 1", AlertActionStyle.DEFAULT, { action ->
@@ -20,7 +20,7 @@ alert.addAction(AlertAction("Action 2", AlertActionStyle.NEGATIVE, { action ->
 
 alert.show(this)
 ```
-#### Java
+### Java
 Using Lambda
 ```java
 AlertView alert = new AlertView("Title", "Message", AlertStyle.BOTTOM_SHEET);
@@ -34,7 +34,7 @@ alert.addAction(new AlertAction("Action 2", AlertActionStyle.NEGATIVE, action ->
 alert.show(this);
 ```
 
-### AlertStyle
+## AlertStyle
 There are three alert styles
 
 ![](https://github.com/Hamadakram/AlertView/blob/master/art/Styles.png?raw=true)
@@ -42,13 +42,13 @@ There are three alert styles
 2. ```AlertStyle.IOS```
 3. ```AlertStyle.DIALOG```
 
-### AlertActionStyle
+## AlertActionStyle
 Three types of Alert Action button styles
 1. ```AlertActionStyle.POSITIVE```
 2. ```AlertActionStyle.NEGATIVE```
 3. ```AlertActionStyle.DEFAULT```
 
-### Themes
+## Themes
 
 ![](https://github.com/Hamadakram/AlertView/blob/master/art/Themes.png?raw=true)
 1. ```AlertTheme.LIGHT```
