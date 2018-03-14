@@ -36,11 +36,11 @@ alert.show(this);
 
 ##### AlertStyle
 There are three alert styles
+
 ![](https://github.com/Hamadakram/AlertView/blob/master/art/Styles.png?raw=true)
 1. AlertStyle.BOTTOM_SHEET
 2. AlertStyle.IOS
 3. AlertStyle.DIALOG
-```java
 
 ## Authors
 
