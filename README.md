@@ -3,7 +3,7 @@ A library to create simple alerts easily with some customization. Written in Kot
 
 ![](https://github.com/Hamadakram/AlertView/blob/master/art/Banner.png?raw=true)
 ## Download
-Grab via Gradle: (Uploading. Will be uploaded in few hours)
+Grab via Gradle:
 ```java
 implementation 'com.irozon.alertview:alertview:1.0.0'
 ```
@@ -15,7 +15,7 @@ alert.addAction(AlertAction("Action 1", AlertActionStyle.DEFAULT, { action ->
 // Action 1 callback
 }))
 alert.addAction(AlertAction("Action 2", AlertActionStyle.NEGATIVE, { action ->
-// Action 1 callback
+// Action 2 callback
 }))
 
 alert.show(this)
@@ -54,6 +54,11 @@ Three types of Alert Action button styles
 1. ```AlertTheme.LIGHT```
 2. ```AlertTheme.DARK```
 
+Set theme by
+```java
+alert.setTheme(AlertTheme.DARK)
+```
+Default theme is LIGHT
 ## Authors
 
 * **Hammad Akram** - (https://github.com/hamadakram)
