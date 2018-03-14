@@ -34,7 +34,7 @@ alert.addAction(new AlertAction("Action 2", AlertActionStyle.NEGATIVE, action ->
 alert.show(this);
 ```
 
-##### AlertStyle
+### AlertStyle
 There are three alert styles
 
 ![](https://github.com/Hamadakram/AlertView/blob/master/art/Styles.png?raw=true)
@@ -42,13 +42,13 @@ There are three alert styles
 2. ```AlertStyle.IOS```
 3. ```AlertStyle.DIALOG```
 
-##### AlertActionStyle
+### AlertActionStyle
 Three types of Alert Action button styles
 1. ```AlertActionStyle.POSITIVE```
 2. ```AlertActionStyle.NEGATIVE```
 3. ```AlertActionStyle.DEFAULT```
 
-##### Themes
+### Themes
 
 ![](https://github.com/Hamadakram/AlertView/blob/master/art/Themes.png?raw=true)
 1. ```AlertTheme.LIGHT```
