@@ -38,9 +38,21 @@ alert.show(this);
 There are three alert styles
 
 ![](https://github.com/Hamadakram/AlertView/blob/master/art/Styles.png?raw=true)
-1. AlertStyle.BOTTOM_SHEET
-2. AlertStyle.IOS
-3. AlertStyle.DIALOG
+1. ```AlertStyle.BOTTOM_SHEET```
+2. ```AlertStyle.IOS```
+3. ```AlertStyle.DIALOG```
+
+##### AlertActionStyle
+Three types of Alert Action button styles
+1. ```AlertActionStyle.POSITIVE```
+2. ```AlertActionStyle.NEGATIVE```
+3. ```AlertActionStyle.DEFAULT```
+
+##### Themes
+
+![](https://github.com/Hamadakram/AlertView/blob/master/art/Themes.png?raw=true)
+1. ```AlertTheme.LIGHT```
+2. ```AlertTheme.DARK```
 
 ## Authors
 
