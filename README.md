@@ -3,7 +3,7 @@ A library to create simple alerts easily with some customization. Written in Kot
 
 ![](https://github.com/Hamadakram/AlertView/blob/master/art/Banner.png?raw=true)
 ## Download
-Grab via Gradle: (Uploading. Will be uploaded in few hours)
+Grab via Gradle:
 ```java
 implementation 'com.irozon.alertview:alertview:1.0.0'
 ```
