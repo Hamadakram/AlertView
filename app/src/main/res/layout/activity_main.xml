@@ -6,12 +6,10 @@
     android:gravity="center"
     tools:context="com.irozon.alertsample.MainActivity">
 
-   <ImageView
+   <Button
        android:id="@+id/btShow"
-       android:layout_width="match_parent"
-       android:scaleType="centerCrop"
-       android:adjustViewBounds="true"
-       android:src="@drawable/background3"
-       android:layout_height="match_parent" />
+       android:layout_width="wrap_content"
+       android:text="Show"
+       android:layout_height="wrap_content" />
 
 </LinearLayout>
