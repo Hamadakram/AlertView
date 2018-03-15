@@ -5,7 +5,13 @@ A library to create simple alerts easily with some customization. Written in Kot
 ## Download
 Grab via Gradle:
 ```java
-implementation 'com.irozon.alertview:alertview:1.0.0'
+repositories {
+   maven { url 'https://dl.bintray.com/hamadakram/maven' }
+}
+```
+```java
+implementation 'com.irozon.alertview:alertview:1.0.1'
+implementation 'com.android.support:design:27.1.0'
 ```
 ## Usage
 ### Kotlin
