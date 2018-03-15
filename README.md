@@ -6,6 +6,7 @@ A library to create simple alerts easily with some customization. Written in Kot
 Grab via Gradle:
 ```java
 implementation 'com.irozon.alertview:alertview:1.0.0'
+implementation 'com.android.support:design:27.1.0'
 ```
 ## Usage
 ### Kotlin
