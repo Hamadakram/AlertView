@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
             }))
 
 
+            //alert.setCancelable(false)
             alert.setTheme(AlertTheme.DARK)
             alert.show(this)
         })

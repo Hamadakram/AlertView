@@ -21,7 +21,7 @@ import java.util.*
  * Created by hammad.akram on 3/14/18.
  */
 @SuppressLint("ValidFragment")
-class DialogFragment(private val title: String, private val message: String, private val actions: ArrayList<AlertAction>, private val theme: AlertTheme) : DialogFragment() {
+class DialogFragment(private val title: String, private val message: String, private val actions: ArrayList<AlertAction>, private val theme: AlertTheme, private val cancelable: Boolean) : DialogFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,6 +53,9 @@ class DialogFragment(private val title: String, private val message: String, pri
         if (message.isEmpty()) view.tvMessage.visibility = View.GONE
 
         view.tvCancel.visibility = View.GONE
+
+        // Setting cancelable property
+        isCancelable = cancelable
 
         // Inflate action views
         inflateActionsView(view.actionsLayout, actions)
