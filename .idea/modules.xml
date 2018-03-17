@@ -3,8 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AlertSample.iml" filepath="$PROJECT_DIR$/AlertSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlertView.iml" filepath="$PROJECT_DIR$/AlertView.iml" />
       <module fileurl="file://$PROJECT_DIR$/alertview/alert.iml" filepath="$PROJECT_DIR$/alertview/alert.iml" />
       <module fileurl="file://$PROJECT_DIR$/alertview/alertview.iml" filepath="$PROJECT_DIR$/alertview/alertview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alertview/alertview.iml" filepath="$PROJECT_DIR$/alertview/alertview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

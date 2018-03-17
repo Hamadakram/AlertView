@@ -20,7 +20,7 @@ import java.util.ArrayList
  */
 
 @SuppressLint("ValidFragment")
-class BottomSheetFragment(private val title: String, private val message: String, private val actions: ArrayList<AlertAction>, private val style: AlertStyle, private val theme: AlertTheme) : BottomSheetDialogFragment() {
+class BottomSheetFragment(private val title: String, private val message: String, private val actions: ArrayList<AlertAction>, private val style: AlertStyle, private val theme: AlertTheme, private val cancelable: Boolean) : BottomSheetDialogFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,6 +57,9 @@ class BottomSheetFragment(private val title: String, private val message: String
         else if (style == AlertStyle.IOS)
             view.tvCancel.visibility = View.VISIBLE
         view.tvCancel.setOnClickListener({ dismiss() })
+
+        // Setting cancelable property
+        isCancelable = cancelable
 
         // Inflate action views
         inflateActionsView(view.actionsLayout, actions)

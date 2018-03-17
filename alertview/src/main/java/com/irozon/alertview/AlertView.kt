@@ -12,6 +12,7 @@ class AlertView(private var title: String, private var message: String, private 
 
     private var theme: AlertTheme = AlertTheme.LIGHT
     private var actions: ArrayList<AlertAction> = ArrayList()
+    private var cancelable: Boolean = true
 
     /**
      * Add Actions to AlertView
@@ -22,21 +23,29 @@ class AlertView(private var title: String, private var message: String, private 
     }
 
     /**
+     * Set AlertView cancelable or not
+     * @param cancelable: Boolean
+     */
+    fun setCancelable(cancelable: Boolean) {
+        this.cancelable = cancelable
+    }
+
+    /**
      * Show AlertView
      * @param activity: AppCompatActivity
      */
     fun show(activity: AppCompatActivity) {
         when (style) {
             AlertStyle.BOTTOM_SHEET -> {
-                val bottomSheet = BottomSheetFragment(title, message, actions, style, theme)
+                val bottomSheet = BottomSheetFragment(title, message, actions, style, theme, cancelable)
                 bottomSheet.show(activity.supportFragmentManager, bottomSheet.tag)
             }
             AlertStyle.IOS -> {
-                val bottomSheet = BottomSheetFragment(title, message, actions, style, theme)
+                val bottomSheet = BottomSheetFragment(title, message, actions, style, theme, cancelable)
                 bottomSheet.show(activity.supportFragmentManager, bottomSheet.tag)
             }
             AlertStyle.DIALOG -> {
-                val bottomSheet = DialogFragment(title, message, actions, theme)
+                val bottomSheet = DialogFragment(title, message, actions, theme,cancelable)
                 bottomSheet.show(activity.supportFragmentManager, bottomSheet.tag)
             }
         }
