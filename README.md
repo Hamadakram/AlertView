@@ -60,6 +60,10 @@ Set theme by
 alert.setTheme(AlertTheme.DARK)
 ```
 Default theme is LIGHT
+
+## Apps using AlertView
+If you are using AlertView in your app and would like to be listed here, please let me know by [email](mailto:hamadakram91@gmail.com) or opening a new issue!
+
 ## Authors
 
 * **Hammad Akram** - (https://github.com/hamadakram)
