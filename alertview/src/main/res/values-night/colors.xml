@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="optionsColor">#F5F5F5</color>
+    <color name="titleColor">#F5F5F5</color>
+    <color name="messageColor">#F5F5F5</color>
+    <color name="green">#43A047</color>
+    <color name="red">#F44336</color>
+    <color name="backgroundColor">#212121</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

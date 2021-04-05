@@ -1,3 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Alert Sample</string>
+    <string name="ios_dialog">IOS Dialog</string>
+    <string name="normal_dialog">Normal Dialog</string>
+    <string name="bottom_sheet_dialog">Bottom Sheet Dialog</string>
 </resources>

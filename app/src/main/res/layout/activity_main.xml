@@ -3,13 +3,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:id="@+id/main_activity_root_ll"
+    android:orientation="vertical"
     tools:context="com.irozon.alertsample.MainActivity">
 
-   <Button
-       android:id="@+id/btShow"
+   <androidx.appcompat.widget.SwitchCompat
+       android:id="@+id/switchButton"
        android:layout_width="wrap_content"
-       android:text="Show"
-       android:layout_height="wrap_content" />
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginTop="60dp"
+       android:checked="false"
+       android:switchMinWidth="56dp"
+       android:text="Dark Mode       " />
+
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/normal_dialog_button"
+       android:layout_width="200dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_margin="60dp"
+       android:background="@drawable/alert_background_dark"
+       android:backgroundTint="#FF9100"
+       android:padding="10dp"
+       android:text="@string/normal_dialog"
+       android:textAllCaps="false"
+       android:textColor="@color/white" />
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/bottom_sheet_dialog_button"
+       android:layout_width="200dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_margin="60dp"
+       android:background="@drawable/alert_background_dark"
+       android:backgroundTint="#002CCC"
+       android:padding="10dp"
+       android:text="@string/bottom_sheet_dialog"
+       android:textAllCaps="false"
+       android:textColor="@color/white" />
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/ios_dialog_button"
+       android:layout_width="200dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_margin="60dp"
+       android:background="@drawable/alert_background_dark"
+       android:backgroundTint="#00B0FF"
+       android:padding="10dp"
+       android:text="@string/ios_dialog"
+       android:textAllCaps="false"
+       android:textColor="@color/white" />
+
+   <androidx.appcompat.widget.AppCompatTextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="bottom"
+       android:gravity="center"
+       android:padding="20dp"
+       android:text="Note: Dialog color can be changed automatically according to device's night mode" />
 
 </LinearLayout>

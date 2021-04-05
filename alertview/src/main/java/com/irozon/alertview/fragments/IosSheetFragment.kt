@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.DialogFragment
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.irozon.alertview.R
 import com.irozon.alertview.enums.AlertActionStyle
@@ -20,13 +19,14 @@ import java.util.*
 /**
  * Created by hammad.akram on 3/14/18.
  */
+
 @SuppressLint("ValidFragment")
-class DialogFragment(private val title: String, private val message: String,
-                     private val actions: ArrayList<AlertAction>, private val theme: AlertTheme) : DialogFragment() {
+class IosSheetFragment(private val title: String, private val message: String, private val actions: ArrayList<AlertAction>,
+                       private val theme: AlertTheme, private val cancelButtonText: String) : BottomSheetDialogFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setStyle(BottomSheetDialogFragment.STYLE_NORMAL, R.style.CustomBottomSheetDialogTheme)
+        setStyle(STYLE_NORMAL, R.style.CustomBottomSheetDialogTheme)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -48,12 +48,15 @@ class DialogFragment(private val title: String, private val message: String,
     private fun initView(view: View?) {
         view?.tvTitle?.text = title
         view?.tvMessage?.text = message
+        view?.tvCancel?.text = cancelButtonText
+        view?.tvCancel?.visibility = View.VISIBLE
 
         // In case of title or message is empty
         if (title.isEmpty()) view?.tvTitle?.visibility = View.GONE
         if (message.isEmpty()) view?.tvMessage?.visibility = View.GONE
-
-        view?.tvCancel?.visibility = View.GONE
+        if (cancelButtonText.isEmpty()) view?.tvCancel?.text = requireContext().getString(R.string.cancel)
+        // Change view according to selected Style
+        view?.tvCancel?.setOnClickListener { dismiss() }
 
         // Inflate action views
         inflateActionsView(view?.actionsLayout, actions)
@@ -89,16 +92,16 @@ class DialogFragment(private val title: String, private val message: String,
             if (context != null) {
                 when (action.style) {
                     AlertActionStyle.POSITIVE -> {
-                        view?.tvAction?.setTextColor(ContextCompat.getColor(context!!, R.color.green))
+                        view?.tvAction?.setTextColor(ContextCompat.getColor(requireContext(), R.color.green))
                     }
                     AlertActionStyle.NEGATIVE -> {
-                        view?.tvAction?.setTextColor(ContextCompat.getColor(context!!, R.color.red))
+                        view?.tvAction?.setTextColor(ContextCompat.getColor(requireContext(), R.color.red))
                     }
                     AlertActionStyle.DEFAULT -> {
                         if (theme == AlertTheme.LIGHT)
-                            view?.tvAction?.setTextColor(ContextCompat.getColor(context!!, R.color.optionsColor))
+                            view?.tvAction?.setTextColor(ContextCompat.getColor(requireContext(), R.color.optionsColor))
                         else if (theme == AlertTheme.DARK)
-                            view?.tvAction?.setTextColor(ContextCompat.getColor(context!!, R.color.white))
+                            view?.tvAction?.setTextColor(ContextCompat.getColor(requireContext(), R.color.white))
                     }
 
                 }
