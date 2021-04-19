@@ -1,7 +1,7 @@
 package com.irozon.alertview.objects
 
+import com.irozon.alertview.enums.AlertActionStyle
 import com.irozon.alertview.interfaces.AlertActionListener
-import com.irozon.alertview.AlertActionStyle
 
 /**
  * Created by hammad.akram on 3/14/18.

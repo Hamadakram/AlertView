@@ -1,4 +1,4 @@
-package com.irozon.alertview
+package com.irozon.alertview.enums
 
 /**
  * Created by hammad.akram on 3/14/18.

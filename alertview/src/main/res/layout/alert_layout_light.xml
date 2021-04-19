@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_margin="16dp"
         android:layout_weight="1"
         android:background="@drawable/alert_background_light"
@@ -20,38 +20,39 @@
             android:paddingBottom="20dp"
             android:paddingTop="20dp">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto"
+                android:fontFamily="@font/roboto_regular"
                 android:gravity="center"
                 android:paddingEnd="16dp"
                 android:paddingStart="16dp"
-                android:textColor="@android:color/black"
-                android:textSize="14dp"
+                android:textColor="@color/titleColor"
+                android:textSize="14sp"
                 android:textStyle="bold"
                 tools:text="Delete" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvMessage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:alpha="0.5"
-                android:fontFamily="@font/roboto"
+                android:fontFamily="@font/roboto_regular"
                 android:gravity="center"
                 android:paddingEnd="16dp"
                 android:paddingStart="16dp"
-                android:textColor="@android:color/black"
-                android:textSize="12dp"
+                android:textColor="@color/messageColor"
+                android:textSize="12sp"
                 tools:text="This photo will be deleted from all of your devices" />
         </LinearLayout>
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
 
             <LinearLayout
                 android:id="@+id/actionsLayout"
@@ -61,7 +62,7 @@
         </ScrollView>
     </LinearLayout>
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvCancel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,14 +70,13 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:background="@drawable/alert_background_light"
-        android:fontFamily="@font/roboto"
+        android:fontFamily="@font/roboto_regular"
         android:gravity="center"
-        android:onClick="onCancelClick"
         android:paddingBottom="20dp"
         android:paddingEnd="10dp"
         android:paddingStart="10dp"
         android:paddingTop="20dp"
-        android:text="Cancel"
-        android:textColor="@android:color/black"
-        android:textSize="14dp" />
+        android:text="@string/cancel"
+        android:textColor="@color/optionsColor"
+        android:textSize="14sp" />
 </LinearLayout>

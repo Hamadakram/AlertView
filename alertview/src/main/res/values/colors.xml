@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="lightGray">#F5F5F5</color>
-    <color name="darkGray">#424242</color>
-    <color name="darkerGray">#424242</color>
+    <color name="optionsColor">#424242</color>
+    <color name="titleColor">#424242</color>
+    <color name="messageColor">#424242</color>
     <color name="green">#43A047</color>
     <color name="red">#F44336</color>
-    <color name="lightWhite">#F5F5F5</color>
+    <color name="backgroundColor">#F5F5F5</color>
+    <color name="darkBackground">#424242</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
 </resources>
